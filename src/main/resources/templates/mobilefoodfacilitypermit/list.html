@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>mobileFoodFacilityPermitsList</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}"></link>
+</head>
+<body class="container">
+<br/>
+<h1>mobileFoodFacilityPermits列表</h1>
+<br/><br/>
+<div class="with:80%">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>locationid</th>
+            <th>Applicant</th>
+            <th>FacilityType</th>
+            <th>cnn</th>
+            <th>LocationDescription</th>
+            <th>Address</th>
+            <th>blocklot</th>
+            <th>block</th>
+            <th>lot</th>
+            <th>permit</th>
+            <th>Status</th>
+            <th>FoodItems</th>
+            <th>X</th>
+            <th>Y</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Schedule</th>
+            <th>dayshours</th>
+            <th>NOISent</th>
+            <th>Approved</th>
+            <th>Received</th>
+            <th>PriorPermit</th>
+            <th>ExpirationDate</th>
+            <th>Location</th>
+            <th>Fire Prevention Districts</th>
+            <th>Police Districts</th>
+            <th>Supervisor Districts</th>
+            <th>Zip Codes</th>
+            <th>Neighborhoods (old)</th>
+
+
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr  th:each="mobileFoodFacilityPermit : ${mobileFoodFacilityPermits}">
+            <th scope="row" th:text="${mobileFoodFacilityPermit.locationid}">1</th>
+            <td th:text="${mobileFoodFacilityPermit.applicant}">neo</td>
+            <td th:text="${mobileFoodFacilityPermit.facilityType}">Otto</td>
+            <td th:text="${mobileFoodFacilityPermit.cnn}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.locationDescription}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.address}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.blocklot}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.block}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.lot}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.permit}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.status}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.foodItems}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.x}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.y}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.latitude}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.longitude}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.schedule}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.dayshours}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.nOISent}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.approved}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.received}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.priorPermit}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.expirationDate}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.location}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.firePreventionDistricts}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.policeDistricts}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.supervisorDistricts}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.zipCodes}">6</td>
+            <td th:text="${mobileFoodFacilityPermit.neighborhoods}">6</td>
+
+
+<!--            <td><a th:href="@{/mobileFoodFacilityPermittoEdit(id=${mobileFoodFacilityPermit.locationid})}">edit</a></td>-->
+            <td><a th:href="@{/mobileFoodFacilityPermitdelete(id=${mobileFoodFacilityPermit.locationid})}">delete</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="form-group">
+    <div class="col-sm-2 control-label">
+        <a href="/tomobileFoodFacilityPermitAdd" th:href="@{/tomobileFoodFacilityPermitAdd}" class="btn btn-info">add</a>
+    </div>
+</div>
+
+</body>
+</html>

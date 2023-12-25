@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>user</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}"></link>
+</head>
+<body class="container">
+<br/>
+<h1>添加mobilefoodfacilitypermit</h1>
+<br/><br/>
+<div class="with:80%">
+    <form class="form-horizontal"   th:action="@{/mobilefoodfacilitypermitadd}"  method="post">
+        <div class="form-group">
+            <label for="locationid" class="col-sm-2 control-label">locationid</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="locationid"  id="locationid" placeholder="locationid"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="applicant" class="col-sm-2 control-label" >applicant</label>
+            <div class="col-sm-10">
+                <input type="applicant" class="form-control" name="applicant" id="applicant" placeholder="applicant"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="facilityType" class="col-sm-2 control-label">facilityType</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="facilityType"  id="facilityType" placeholder="facilityType"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="cnn" class="col-sm-2 control-label">cnn</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="cnn"  id="cnn" placeholder="cnn"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="locationDescription" class="col-sm-2 control-label">locationDescription</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="locationDescription"  id="locationDescription" placeholder="locationDescription"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="address" class="col-sm-2 control-label">address</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="address"  id="address" placeholder="address"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="blocklot" class="col-sm-2 control-label">blocklot</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="blocklot"  id="blocklot" placeholder="blocklot"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="block" class="col-sm-2 control-label">block</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="block"  id="block" placeholder="block"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="lot" class="col-sm-2 control-label">lot</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="lot"  id="lot" placeholder="lot"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="permit" class="col-sm-2 control-label">permit</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="permit"  id="permit" placeholder="permit"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="status" class="col-sm-2 control-label">status</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="status"  id="status" placeholder="status"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="foodItems" class="col-sm-2 control-label">foodItems</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="foodItems"  id="foodItems" placeholder="foodItems"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="x" class="col-sm-2 control-label">x</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="x"  id="x" placeholder="x"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="y" class="col-sm-2 control-label">y</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="y"  id="y" placeholder="y"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="latitude" class="col-sm-2 control-label">latitude</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="latitude"  id="latitude" placeholder="latitude"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="longitude" class="col-sm-2 control-label">longitude</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="longitude"  id="longitude" placeholder="longitude"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="schedule" class="col-sm-2 control-label">schedule</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="schedule"  id="schedule" placeholder="schedule"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="dayshours" class="col-sm-2 control-label">dayshours</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="dayshours"  id="dayshours" placeholder="dayshours"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="nOISent" class="col-sm-2 control-label">nOISent</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="nOISent"  id="nOISent" placeholder="nOISent"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="approved" class="col-sm-2 control-label">approved</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="approved"  id="approved" placeholder="approved"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="received" class="col-sm-2 control-label">received</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="received"  id="received" placeholder="received"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="priorPermit" class="col-sm-2 control-label">priorPermit</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="priorPermit"  id="priorPermit" placeholder="priorPermit"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="expirationDate" class="col-sm-2 control-label">expirationDate</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="expirationDate"  id="expirationDate" placeholder="expirationDate"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="location" class="col-sm-2 control-label">location</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="location"  id="location" placeholder="location"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="firePreventionDistricts" class="col-sm-2 control-label">firePreventionDistricts</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="firePreventionDistricts"  id="firePreventionDistricts" placeholder="firePreventionDistricts"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="policeDistricts" class="col-sm-2 control-label">policeDistricts</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="policeDistricts"  id="policeDistricts" placeholder="policeDistricts"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="supervisorDistricts" class="col-sm-2 control-label">supervisorDistricts</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="supervisorDistricts"  id="supervisorDistricts" placeholder="supervisorDistricts"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="zipCodes" class="col-sm-2 control-label">zipCodes</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="zipCodes"  id="zipCodes" placeholder="zipCodes"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="neighborhoods" class="col-sm-2 control-label">neighborhoods</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="neighborhoods"  id="neighborhoods" placeholder="neighborhoods"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <input type="submit" value="Submit" class="btn btn-info" />
+                &nbsp; &nbsp; &nbsp;
+                <input type="reset" value="Reset" class="btn btn-info" />
+            </div>
+
+        </div>
+    </form>
+</div>
+</body>
+</html>
